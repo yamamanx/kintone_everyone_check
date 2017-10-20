@@ -74,7 +74,7 @@ def lambda_handler(event, context):
 
             if len(response_dict['apps']) == 0:
                 send_message(
-                    'kintone app count:{count}'.format(
+                    ':triumph:kintone app count:{count}'.format(
                         count=str(count)
                     ),
                     channel

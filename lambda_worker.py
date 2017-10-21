@@ -73,7 +73,7 @@ def lambda_handler(event, context):
         response_dict = json.loads(response.text)
 
         if 'rights' in response_dict:
-            rights = response['rights']
+            rights = response_dict['rights']
             for acl in rights:
                 logger.debug(acl)
                 if 'entity' in acl:
